@@ -1,0 +1,138 @@
+.img-container {
+    position: relative; /* Giữ lại position: relative cho container */
+    width: 100%;
+    height: 393px;
+    border: 1px solid red;
+}
+
+.left-button {
+    position: absolute; /* Giữ lại vị trí tuyệt đối */
+    width: 24px;
+    height: 24px;
+    left: 10px; /* Căn chỉnh vị trí bên trái */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-50%);
+    color: white;
+    z-index: 10; /* Đảm bảo nút nằm trên hình ảnh */
+}
+
+.right-button {
+    position: absolute; /* Giữ lại vị trí tuyệt đối */
+    width: 24px;
+    height: 24px;
+    right: 10px; /* Căn chỉnh vị trí bên phải */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-50%);
+    color: white;
+    z-index: 10; /* Đảm bảo nút nằm trên hình ảnh */
+}
+
+.cost-container{
+    margin-top: 14px;
+    position: relative;
+    border:1px solid red;
+    height:77px ;
+    margin-left: 45px;
+    margin-right: 45px;
+    max-width: calc(100% - 90px);
+}
+.icon-dollar{
+    /* $ */
+    position: absolute;
+    top: 3px;
+    width: 16px;
+    height: 30px;
+    /* h3 */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24.89px;
+    line-height: 30px;
+    text-align: center;
+    /* middle green pressed */
+    color: #2A7D37;
+}
+.cost{
+    /* 152.00 */
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    width: 80px;
+    height: 30px;
+
+
+/* h3 */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24.89px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+}
+.book-name{
+    /* SEOUL Sring 2024 - artdrunk */
+    position: absolute;
+    top: 45px;
+    width: 400px;
+    height: 18px;
+    /* para */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.4px;
+    line-height: 18px;
+    /* identical to box height */
+    text-align: left;
+    color: #000000;
+}
+
+.info-container{
+    position: relative;
+    border: 1px solid red;
+    height:77px ;
+    margin-left: 45px;
+    margin-right: 45px;
+    max-width: calc(100% - 90px);
+    transition: all 0.3s ease;
+}
+.text-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Hiệu ứng mượt mà khi mở rộng */
+}
+
+.text-content.collapsed {
+    max-height: 3em; /* Giới hạn chiều cao khi rút gọn (4 dòng) */
+    -webkit-line-clamp: 4;
+    
+}
+
+.text-content.expanded {
+    max-height: none; /* Mở rộng toàn bộ chiều cao khi nhấn "See detail" */
+    white-space: normal;
+}
+
+.toggle-button {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #919191;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0;
+    text-align: left;
+}
+
+.comment-container{
+    border: 1px solid red;
+    height:100%;
+    margin-left: 45px;
+    margin-right: 45px;
+    max-width: calc(100% - 90px);
+}

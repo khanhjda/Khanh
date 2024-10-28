@@ -1,0 +1,69 @@
+// General navigation styles
+.zaui-bottom-navigation-content{
+    background-color: #F1F3E6 !important; 
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+.bottom-navigation {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+  margin: 0.25rem auto;
+  border-radius: 48px;
+  width: calc(100% - 7.5rem);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-navigation {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.bottom-navigation .zaui-bottom-navigation-item {
+  text-align: center;
+  line-height: 48px;
+}
+
+.bottom-navigation .zaui-bottom-navigation-item svg {
+  color: #9e9e9e;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+
+// Hover state
+
+.bottom-navigation .zaui-bottom-navigation-item:hover svg {
+  color: #919191; 
+  transform: scale(1.1); 
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+// Active state
+.bottom-navigation .zaui-bottom-navigation-item-active {
+  background-color: #000000;
+  border-radius: 32px;
+  padding: 0; 
+  margin: 0 auto; 
+  transition: background-color 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+}
+
+.bottom-navigation .zaui-bottom-navigation-item-active svg {
+  color: #F8FAED !important;
+  font-size: 24px;
+  margin: 0; 
+  padding: 0; 
+}
